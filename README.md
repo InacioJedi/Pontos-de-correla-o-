@@ -45,3 +45,47 @@ Correspondência de pontos na estátua do Cristo Redentor:
 
 ```bash
 pip install opencv-python opencv-contrib-python numpy
+📌 2. Colocar as imagens no mesmo diretório
+Renomeie como:
+
+Copiar código
+imagem1.png
+imagem2.png
+📌 3. Rodar o programa
+bash
+Copiar código
+python comparar_imagens.py
+A saída será:
+
+imagem resultado_match.png mostrando os matches filtrados
+
+mensagem indicando se são do mesmo local
+
+📊 Critérios de Decisão
+O sistema considera que as imagens representam o mesmo cenário se:
+
+✔ Possuírem mínimo de 18 inliers
+✔ Passarem no teste geométrico por Homografia
+
+Isso garante alta precisão e confiabilidade.
+
+📎 Estrutura do Projeto
+bash
+Copiar código
+📁 N3-MARTIM
+ ├── 📄 comparar_imagens.py   # Código principal
+ ├── 🖼 imagem1.png            # Primeira imagem
+ ├── 🖼 imagem2.png            # Segunda imagem
+ └── 🖼 resultado_match.png    # Resultado com correspondências
+🧠 Autor
+Inácio Tomazelli
+
+📌 Observações Finais
+✔ Pontos falsos no fundo são eliminados automaticamente
+✔ Visual limpo e profissional
+✔ Projeto validado com imagens reais do Cristo Redentor
+
+🎯 Objetivo Avaliado
+Demonstrar a aplicação prática de técnicas de Visão Computacional para
+análise e correspondência de imagens, incluindo detecção de interesse,
+matching, validação geométrica e interpretação dos resultados.
